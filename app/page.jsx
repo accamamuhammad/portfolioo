@@ -1,11 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
+import Nav from "./components/Nav";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <main>
-      <h1>Alamin</h1>
-      <Link href="/projects">Project</Link>
+      <Nav />
+      <h1 className="text-blue-500">Home page</h1>
+      <About />
+      <Projects />
+      <Contact />
     </main>
   );
-}
+};
+
+export default HomePage;
